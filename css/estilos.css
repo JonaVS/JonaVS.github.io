@@ -1,0 +1,140 @@
+body, html{
+  height: 100%;
+  margin: auto;
+}
+
+.navbar-custom-bg{
+  background-color: black;
+  opacity: 0.8;
+}
+
+.custom-logo, .navbar-brand{
+  padding: 10px;
+  background-color: #73e600e7;
+  color:rgb(241, 241, 241) !important;
+  border-radius: 10%;
+}
+
+.message-container{
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 25%;
+  left: 53%;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.message-container p{
+  color: white;
+  font-size: 50px;
+  line-height: 0.8;
+  font-family: 'Audiowide', Courier, monospace;
+}
+.message-2nd-line{
+  font-size: 25px;
+}
+
+.banner-hero {
+  position: relative;
+  background-image: url("../imagenes/heroimage.jpg");
+  height: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-color: red;
+}
+
+
+@media screen and (max-width: 900px) {
+  .banner-hero{
+    height: 40%;
+  }
+
+  .foto{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.photo-container{
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  text-align: center;
+  z-index: 1;
+}
+
+.foto{
+  border-radius: 50%;
+}
+
+.shadow-effect{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.about-me{
+  position: relative;
+  height: 100%;
+  background-color: rgba(233, 230, 230, 0.89);
+}
+
+.about-row{
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 18%; 
+}
+
+.about-knowledge{
+
+  background-color: rgb(121, 132, 167);
+}
+
+.side-tittle-aboutme{
+  font-family: 'Amatic SC', Courier, monospace;
+  text-align: center;
+  color: white;
+  float: right;
+  background-color:  #481212;
+  width: 5%;
+  height: 50%;
+  text-orientation: mixed;
+  -webkit-text-orientation: mixed;
+  writing-mode: vertical-lr;
+  padding: 10px;
+}
+
+.side-tittle-aboutknow{
+  font-family: 'Amatic SC', Courier, monospace;
+  text-align: center;
+  color: white;
+  background-color: #481212;
+  width: 5%;
+  height: 50%;
+  text-orientation: mixed;
+  -webkit-text-orientation: mixed;
+  writing-mode: vertical-lr;
+  padding: 10px;
+}
+
+
+.about-paragraphs{
+  color: white;
+}
+
+.images-container1{
+  display: flex;
+  width: auto;
+  background-color: aqua;
+  justify-content: center;
+}
+
+.tech-image{
+  height: 60px;
+  width: 60px;
+}
+
+
+

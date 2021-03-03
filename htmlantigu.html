@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="./css/prueba.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Cormorant+Unicase|Jura|Anton|Abel">
+  <title>JVS Portafolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-bg p-3">
+    <a class="navbar-brand custom-logo" href="#">JVS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" style="font-size: 1rem;" href="#aboutMeSection"><i
+            class="bi bi-person-circle nav-icon"></i>Sobre mi</a>
+        <a class="nav-item nav-link" style="font-size: 1rem;" href="#aboutProjectsSection"><i
+            class="bi bi-briefcase nav-icon"></i>Proyectos</a>
+        <a class="nav-item nav-link" style="font-size: 1rem;" href="#"><i
+            class="bi bi-telephone nav-icon"></i>Contacto</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid banner-hero">
+    <div class="container message-container">
+      <p class="hero-message-ln1 ln-animation1 show-on-scroll">¡HOLA!,</p>
+      <p class="hero-message-ln2 ln-animation2 show-on-scroll">SOY<span class="name-style">JONATHAN</span></p>
+      <p class="hero-message-ln3 ln-animation3 show-on-scroll">DESARROLLADOR WEB</p>
+    </div>
+    <div class="container photo-container" id="aboutMeSection">
+      <img class="photo shadow-effect" src="./imagenes/foto.jpg"></img>
+    </div>
+  </div>
+  <!-- ABOUT ME SECTION -->
+  <div class="container about-me shadow-effect">
+    <h1 class="side-tittle-aboutme ln-animation3 show-on-scroll">SOBRE MI</h1>
+    <div class="row no-gutters about-row justify-content-center ms-0 me-0">
+      <div class="col-lg-6 col-md-9 col-sm-9 col p-3">
+        <p class="about-me-text para-animation show-on-scroll">Mi nombre es Jonathan Vargas Solano, soy desarrollador web y un
+          gran apasionante de la tecnología en general. Desde mi niñez siempre me ha llamado la atención lo que esté relacionado
+          con las computadoras, siendo esto lo que me impulsó principalmente años después en llevar alguna carrera que se
+          enfocara en el área. Esto me llevó a la carrera de ingeniería en informática, de la cual me gradué en la Universidad
+          Estatal a Distancia de Costa Rica (UNED) logrando así una de mis principales metas.</p>
+        <p class="about-me-text para-animation show-on-scroll">En el campo de desarrollo soy muy curioso con las tecnologías que
+          lleguen a estar en tendencia, debido a que es un campo muy dinámico, con lo cual siempre trato de aprender nuevas
+          cosas ya sea de manera individual o con otras personas, con la meta de no aferrarme a las que ya manejo, mejorando así
+          mis niveles de adaptabilidad ante diversas situaciones.</p>
+        <p class="about-me-text para-animation show-on-scroll">Dentro de mis aspiraciones a nivel profesional se encuentra la de
+          ser en un desarrollador FullStack con la capacidad adicional de ser mentor para otras personas. Esto nace debido a que
+          me gustan los mundos en donde se toca todo lo relacionado a las interfaces de usuario de lado del cliente, así como lo
+          que pase a nivel de servidor con las aplicaciones. </p>
+      </div>
+    </div>
+    <br>
+    <hr class="special-hr">
+    <h2 style="margin-left: 10px; font-family: 'Jura';">
+      <i class="bi bi-list-task"></i>
+      Ficha tecnica
+      <button style="font-size: 15px;" class="btn btn-outline-dark techbtn btn-sm" type="button" id="techCardBtn" value="Ver" data-bs-toggle="collapse"
+        data-bs-target="#collapseKnowledge" aria-expanded="false" aria-controls="collapseExample">Ver <i class="bi bi-eye"></i>
+      </button>
+    </h2>
+    <div class="collapse about-knowledge-wrapper" id="collapseKnowledge">
+      <div class="card card-body knowledge-card p-0">
+        <div class="container-fluid">
+          <div class="row no-gutters tech-info text-center">
+            <div class="col-12 col-md-6 p-2 knowledge-col">
+              <h3>Herramientas tecnologicas <i class="bi bi-code-slash"></i></h3>
+              <h4>Frontend</h4>
+              <p>HTML5, CSS3/Bootstrap, Javascript/jQuery</p>
+              <h4>Backend</h4>
+              <p>ASP.NET Core (C#), SQL Server, Entity Framework Core</p>
+              <h4>Otras</h4>
+              <p>Desarrollo web con MVC, Microsoft Azure (SQL Server, Blop Storage)</p>
+            </div>
+            <div class="col-12 col-md-6 p-2">
+              <h3>Actualmente aprendiendo <i class="bi bi-book"></i></h3>
+              <p>React.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- ABOUT MY PROJECTS SECTION -->
+  <div class="container-fluid about-projects-wrapper text-center" id="aboutProjectsSection">
+    <h1 class="side-tittle-projects ln-animation3 show-on-scroll">PROYECTOS</h1>
+    <div class="centered-text-container ln-animation2 show-on-scroll">
+        <p class="projects-header-text">En esta sección podrás ver los</p>
+        <p class="projects-header-text">proyectos que he elaborado,</p>
+        <p class="projects-header-text">asi como en los que he formado parte.</p>
+    </div>
+    <div class="row justify-content-center m-4">
+      <div class="col-11 col-md-3 col-lg-3 p-2 m-1 projects-focus1 project-focus-animation show-on-scroll">
+        <img src="./imagenes/responsive.svg" class="projects-section-icon">
+        <p class="projects-col-text">Los proyectos que verás son elaborados tomando en cuenta una compatibilidad elevada con
+          diversos tipos de pantalla, algo que es muy importante en la actualidad.</p>
+      </div>
+      <div class="col-11 col-md-3 col-lg-3 p-2 m-1 projects-focus2 project-focus-animation show-on-scroll">
+        <img src="./imagenes/palette.svg" class="projects-section-icon">
+        <p class="projects-col-text">Puedo llegar a ser creativo con los diseños que realice de manera personal, siempre
+          buscando de que sean agradables y fáciles de usar. </p>
+        </div>
+      <div class="col-11 col-md-3 col-lg-3 p-2 m-1 projects-focus3 project-focus-animation show-on-scroll">
+        <img src="./imagenes/tools.svg" class="projects-section-icon">
+        <p class="projects-col-text">Suelo estar al tanto del surgimiento de nuevas tecnologías en el campo de desarrollo, lo
+          cual me da la oportunidad de crear soluciones que estén en resonancia con la actualidad. </p>
+        </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-0 justify-content-center">
+    <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mb-4 me-2 col-8">
+      <div class="card shadow-effect project-card rounded-corners">
+        <img src="./imagenes/tfglogo.png" class="card-img-top rounded-corners" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TFG</h5>
+          <p class="card-text">Mi trabajo final de graduación. UNED 2020.</p>
+          <button class="btn btn-outline-dark project-details-btn" value="tfgbtn" type="button" aria-expanded="false"
+            aria-controls="collapseExample" id="tfg-btn">
+            Detalles
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 col-8 m-0">
+      <div class="card shadow-effect project-card rounded-corners">
+        <img src="./imagenes/portlogo.png" class="card-img-top rounded-corners" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mi portafolio</h5>
+          <p class="card-text">El sitio que estás viendo en estos momentos :)</p>
+          <button class="btn btn-outline-dark project-details-btn" value="portabtn" type="button" aria-expanded="false"
+            aria-controls="collapseExample" id="porta-btn">
+            Detalles
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--PROJECT DETAILS SECTION -->
+  <div class="container bg-light shadow-effect project-details p-5" id="tfg-details">
+    <button class="btn btn-outline-dark details-close-btn" value="portabtn" type="button" aria-expanded="false"
+      aria-controls="collapseExample" id="close-details-btn">
+      X Cerrar
+    </button>
+    <img class="project-img" src="./imagenes/tfglogo.png" alt="">
+    <h1 class="mt-4">Descripción del proyecto <i class="bi bi-list-task project-details-icon"></i></h1>
+    <p class="">Nota: Te advierto desde ya que lo que vas a ver era ficticio, el objetivo de la universidad era de que fuéramos
+      capaces de simular todo el ciclo de vida del desarrollo de software, con lo cual, hubo etapa de diagnóstico de una
+      problemática, análisis, diseño de una propuesta, implementación y evaluación.</p>
+
+    <p>El proyecto se basó en una propuesta a nivel de tienda virtual/Catálogo en línea (No era un Amazon 2.0 jeje) para un
+      negocio real (patrocinador o cliente de la simulación del proyecto) ubicado en Paraíso de Cartago dedicado a la venta
+      de prendas y accesorios del tipo boutique. La propuesta se centró en el desarrollo de un sitio web tipo catalogo en
+      línea, así como una app para Android que funcionaba como herramienta administrativa. Esto último fue algo que quería
+      experimentar a nivel de desarrollo móvil nativo, así que fue realizado de esa manera.</p>
+    <h1>Funcionalidades del sitio web</h1>
+    <p>Catálogo de productos, registro de usuarios, login, carro de compras, lista de deseos (usuarios registrados),
+      generación de pedidos (usuarios registrados), gestión de cuentas para usuarios, envío de correos para activación de
+      cuentas y recuperación de contraseñas.</p>
+    <h1>Funcionalidades de la app móvil</h1>
+    <p>Login para administrador, gestión de productos (listar, editar, agregar) , gestión de categorías (agregar,editar),
+      gestion de pedidos (listar, actualizar estados, eliminar).</p>
+    <h1>Almacenaminto de la información</h1>
+    <p>La información se almacenaba en una base de datos en Microsoft Azure. Las imágenes de productos se almacenaban en el
+      servicio de Azure Blop storage (Se subían mediante la app móvil). Las URL de las imágenes se almacenaban en la base de
+      datos.</p>
+    <h1 class="mt-4">Herramientas utilizadas <i class="bi bi-gear project-details-icon"></i></h1>
+    <p>Frontend: CSS3, Javascript, HTML5</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+    <h1 class="mt-4">Galeria <i class="bi bi-image project-details-icon"></i></h1>
+    <button class="btn btn-outline-dark" value="tfgbtn" type="button" id="gallery-btn">
+      Mostrar
+    </button>
+    <br>
+    <Br>
+    <div class="row row-cols-1 row-cols-md-2 g-0 image-gallery" data-masonry='{"percentPosition": true }' id="gallery">
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/InicioSitio.png" class="card-img-top" alt="Página principal">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image card-img-top" src="./imagenes/Sitio web/Cata.png" class="card-img-top" alt="Catalogo Productos">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/Registro.png" class="card-img-top" alt="DianaStore Registro">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/Login.png" class="card-img-top" alt="Diana Store Login">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/DetallePro.png" class="card-img-top" alt="Detalle producto">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/Carro.png" class="card-img-top" alt="DianaStore Carro">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/DetalleOrden.png" class="card-img-top" alt="DianaStore Detalle Orden">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/GestionCuenta.png" class="card-img-top" alt="DianaStore GestionCuenta">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/AppMenu.png" class="card-img-top" alt="DianaApp Menu">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/AppLogin.png" class="card-img-top" alt="DianaApp Login">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/CataM.png" class="card-img-top" alt="DianaStore Catalogo M">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/Sitio web/inicioSitioM.png" class="card-img-top" alt="DianaStore Inicio M">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/AppGesCat.png" class="card-img-top" alt="DianaApp Categorias">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/AppAgregarPro.png" class="card-img-top" alt="DianaApp AgregarP">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/DetallePro.png" class="card-img-top" alt="DianaApp DetallePro">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/AppListaPro.png" class="card-img-top" alt="DianaApp ListadoPro">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/DetallePedido.png" class="card-img-top" alt="DianaApp DetallePedido">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card project-card">
+          <img class="gallery-image" src="./imagenes/AppAdmin/ListaPedidos.png" class="card-img-top" alt="DianaApp ListadoPedidos">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-light shadow-effect project-details" id="porta-details">
+    <button class="btn btn-outline-dark details-close-btn" value="portabtn" type="button" aria-expanded="false"
+      aria-controls="collapseExample" id="close-details-btn">
+      X Cerrar
+    </button>
+    <img class="project-img" src="./imagenes/portlogo.png" alt="">
+    <h1 class="mt-4">Descripción del proyecto <i class="bi bi-list-task project-details-icon"></i></h1>
+    <p class="">Para este proyecto no hay mucho que decir, es el sitio donde te cuento un poco acerca de mí, publico los
+      proyectos que he elaborado, así como en los que he formado parte.</p>
+    <p>A nivel de desarrollo, quería realizarlo desde cero, así que lo que observas es el resultado que tiene de momento.
+      Pude haber buscado una plantilla por internet y solo cambiar la información a nivel de texto y poner mi foto, pero
+      siento que perdía la esencia de tener algo completamente personal, más aun tomando en cuenta el área al que está
+      enfocado.</p>
+    <p>El proyecto le iré mejorando con el tiempo, así que si  vuelves en un futuro puede que veas algo completamente diferente 😊.</p>
+    <h1 class="mt-4">Herramientas utilizadas <i class="bi bi-gear project-details-icon"></i></h1>
+    <p>Frontend: CSS3, Javascript, HTML5</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+    <p>Frameworks: BootStrap 4+, JQuery</p>
+  </div>
+  <br>
+  <!-- CONTACT SECTION -->
+  <div class="container-fluid contact-wrapper">
+    <h1 class="side-tittle-contact ln-animation3 show-on-scroll">CONTACTO</h1>
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 p-0">
+        <div class="special-container" style="height: 100%;">
+          <h1 class="side-tittle-contact mobile-alt-tittle">CONTACTO</h1>
+          <div class="centered-text-container ln-animation2 show-on-scroll">
+            <p class="contact-header-text">Si te ha interesado mi trabajo</p>
+            <P class="contact-header-text">o tienes alguna consulta</P>
+            <P class="contact-header-text">puedes hacerlo mediante:</P>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-6 bg-light text-center p-4">
+        <img class="photo-contact shadow-effect animation-test" src="./imagenes/foto.jpg"></img>
+        <div class="contact-details-wrapper">
+          <p class="mt-2 mb-0 contact-data-animation show-on-scroll contact-name">Jonathan Vargas Solano</p>
+          <p class="mb-0 contact-data-animation show-on-scroll contact-location"><i class="bi bi-geo-alt contact-icon"></i>Cartago-Costa Rica</p>
+          <p class="mb-0 contact-data-animation show-on-scroll contact-email"><i class="bi bi-envelope contact-icon"></i>jon47_@hotmail.com</p>
+          <p class="mb-0 contact-data-animation show-on-scroll contact-phone"><i class="bi bi-phone contact-icon"></i>8699 4982</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- IMAGE VIEWVER -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Image viewer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./imagenes/portlogo.png" class="card-img-top" alt="..." id="imageToView">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="./js/portfolioScripts.js"></script>
+  <script src="./js/portfollioScrollScript.js"></script>
+</body>
+
+</html>
