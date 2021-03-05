@@ -3,7 +3,7 @@ jQuery(function () {
     hideProjectDetails();
     projectDetailsHandler();
     btnHideDetails();
-    hideGallery();
+    galleryToggler();
     imageGalleryClick();
     techBtnToggler();
 })
@@ -25,6 +25,7 @@ function projectDetailsHandler(){
 
 function hideProjectDetails() {
     $(".project-details").hide();
+    $("#gallery").hide();
 }
 
 function btnHideDetails (){
@@ -33,7 +34,7 @@ function btnHideDetails (){
     })
 }
 
-function hideGallery(){
+function galleryToggler(){
     $("#gallery-btn").on("click", function(){
         $("#gallery").slideToggle();
     })
@@ -41,8 +42,16 @@ function hideGallery(){
 
 function imageGalleryClick(){
     $("img.gallery-image").on("click", function(){
-        let imgURL = this.getAttribute("src");
-        $("#imageToView").attr("src", imgURL);
+        //let imgURL = this.getAttribute("src");
+        let imgClicked = this;
+        $("#imageToView").attr("src", imgClicked.getAttribute("src"));
+        if ($(imgClicked).hasClass("phone-style")) {
+            console.log("estoy dentro del if");
+            $("#imageToView").attr("style", "transform: scale(.7, .7);");
+        }
+        else{
+            $("#imageToView").attr("style", "transform: scale(1, 1);");
+        }
         $("#staticBackdrop").modal('show');
         
     });
@@ -60,4 +69,27 @@ function techBtnToggler(){
 
 }
 
+function smoothScroll () {
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+}
 
