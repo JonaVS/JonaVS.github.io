@@ -1,5 +1,8 @@
-  //FUCTION TO OPEN SPECIFIC PROJECT DETAILS
+
+//ON DOCUMENT READY FUNCTION.
 jQuery(function () {
+    loop()
+    galleryImgclassLoader();
     hideProjectDetails();
     projectDetailsHandler();
     btnHideDetails();
@@ -8,6 +11,15 @@ jQuery(function () {
     techBtnToggler();
 })
 
+//GLOBAL VARIABLES FOR ANIMATIONS WHILE SCROLLING//
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+//GLOBAL VARIABLES END/
+
+
+//FUNCTION FOR OPENING SPECIFIC PROJECT DETAILS//
 function projectDetailsHandler(){
     $("button.project-details-btn").on("click", function () {
         let targetFragments = this.id.split("-");
@@ -23,26 +35,36 @@ function projectDetailsHandler(){
     })
 }
 
+//FUNCTION TO HIDE PROJECT DETAILS SECTION INFO FROM DOCUMENT IS READY FUCTION//
 function hideProjectDetails() {
     $(".project-details").hide();
     $("#gallery").hide();
 }
 
+//FUNTION TO MANUALLY CLOSE SPECIFIC PROJECT DETAILS//
 function btnHideDetails (){
     $("button.details-close-btn").on("click", function(){
         $("div.project-details").fadeOut();
     })
 }
 
+//FUNCTION TO SHOW/HIDE THE GALLERY FEATURE FROM PROJECT INFO (IF AVAILABLE)
 function galleryToggler(){
     $("#gallery-btn").on("click", function(){
         $("#gallery").slideToggle();
     })
 }
 
+//FUNCTION THAT ADDS SOME CLASES FOR ANIMATION TO GALLERY IMAGES
+function galleryImgclassLoader(){
+    $(".gallery-image").addClass("img-gallery-animation show-on-scroll");
+    elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+}
+
+
+//FUNCTION THAT CONTROLS HOW THE IMAGE VIEWVER HANDLES SPECIFIC TYPES OF IMAGES (DIANA CAROLINA PROJECT)
 function imageGalleryClick(){
     $("img.gallery-image").on("click", function(){
-        //let imgURL = this.getAttribute("src");
         let imgClicked = this;
         $("#imageToView").attr("src", imgClicked.getAttribute("src"));
         if ($(imgClicked).hasClass("phone-style")) {
@@ -57,6 +79,7 @@ function imageGalleryClick(){
     });
 }
 
+//FUNCTION TO CHANGE TECH KNOLEDGE BUTTON STYLES WHEN PRESSED
 function techBtnToggler(){
     $("#techCardBtn").on("click", function(){
         if ($("#techCardBtn").html().match('Ver <i class=\"bi bi-eye\"><\/i>')) {
@@ -66,30 +89,37 @@ function techBtnToggler(){
             $("#techCardBtn").html('Ver <i class=\"bi bi-eye\"><\/i>');
         } 
     });
-
 }
 
-function smoothScroll () {
-    $("a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+
+//ANIMATE WHILE SCROLLING FUNCTIONS//
+function loop() {
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
 }
 
+function isElementInViewport(el) {
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+  
