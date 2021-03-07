@@ -1,0 +1,157 @@
+
+  .ln-animation1.is-visible{
+    animation-name: moveleft;
+    animation-duration: 1.4s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes moveleft{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.6;}
+    100% {transform: translateX(60px); opacity: 0.3;}
+  }
+
+  .ln-animation2.is-visible{
+    animation-name: moveright2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes moveright2{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.5;}
+    100% {transform: translateX(-90px); opacity: 0;}
+  }
+
+  .ln-animation3.is-visible{
+    animation-name: moveup;
+    animation-duration: 1.3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes moveup{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.5;}
+    100% {transform: translateY(50px); opacity: 0;}
+  }
+
+  .para-animation.is-visible{
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeIn{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.3;}
+    100% {opacity: 0.1;}
+  }
+
+
+  .project-focus-animation.is-visible{
+    animation-name: moveupCell;
+    animation-duration: 1.2s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes moveupCell{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.5;}
+    100% {transform: translateY(55px); opacity: 0;}
+  }
+
+  .projects-focus1{animation-delay: 1s;}
+  .projects-focus2{animation-delay: 1.6s;}
+  .projects-focus3{animation-delay: 2.1s;}
+
+
+
+  .project-card{
+    transition: transform 0.6s;
+  }
+
+  .project-card:hover{
+    transform: translateY(10px);
+    position: relative;
+  }
+
+  .img-gallery-animation.is-visible{
+    animation-name: greyScale;
+    animation-direction: reverse;
+    animation-delay: 0.3s;
+    animation-duration: 1.2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes greyScale{
+    0%   {opacity: 1; filter: grayscale(0%);}
+    50%  {opacity: 1; filter: grayscale(100%);}
+    100% {opacity: 0.5;}
+  }
+
+
+  .contact-data-animation.is-visible{
+    animation-name: moveupData;
+    animation-duration: 0.9s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes moveupData{
+    0%   {opacity: 1;}
+    50%  {opacity: 0.2;}
+    100% {transform: translateY(55px); opacity: 0;}
+  }
+
+  .contact-name{
+    animation-delay: 0.5s;
+  }
+  .contact-location{
+    animation-delay: 0.7s;
+  }
+  .contact-email{
+    animation-delay: 0.9s;
+
+  }
+  .contact-phone{
+    animation-delay: 1.1s;
+  }
+  
+
+  
+@media (min-width: 320px) { 
+  .color-guider{background-color: rgb(218, 44, 209);}
+  .projects-focus1{animation-delay: 0.5s;}
+  .projects-focus2{animation-delay: 0.5s;}
+  .projects-focus3{animation-delay: 0.5s;}
+ }
+@media (min-width: 576px) { 
+  .color-guider{background-color: rgb(218, 44, 44);}
+ }
+
+@media (min-width: 768px) {
+  .color-guider{background-color: rgb(44, 218, 44);}
+  .projects-focus1{animation-delay: 1s;}
+  .projects-focus2{animation-delay: 1.6s;}
+  .projects-focus3{animation-delay: 2.1s;}
+ }
+
+@media (min-width: 992px) { 
+  .color-guider{background-color: rgb(155, 168, 36);}
+ }
+@media (min-width: 1200px) { 
+  .navbar-custom-bg{background-color: rgb(0, 0, 0);}
+ }
